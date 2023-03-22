@@ -1,0 +1,60 @@
+GEM
+  specs:
+    activemodel (6.1.7.3)
+      activesupport (= 6.1.7.3)
+    activerecord (6.1.7.3)
+      activemodel (= 6.1.7.3)
+      activesupport (= 6.1.7.3)
+    activesupport (6.1.7.3)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+      zeitwerk (~> 2.3)
+    concurrent-ruby (1.2.2)
+    faker (3.1.1)
+      i18n (>= 1.8.11, < 2)
+    i18n (1.12.0)
+      concurrent-ruby (~> 1.0)
+    minitest (5.18.0)
+    multi_json (1.15.0)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    rack (2.2.6.4)
+    rack-protection (2.2.0)
+      rack
+    rake (13.0.6)
+    ruby2_keywords (0.0.5)
+    sinatra (2.2.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.2.0)
+      tilt (~> 2.0)
+    sinatra-activerecord (2.0.26)
+      activerecord (>= 4.1)
+      sinatra (>= 1.0)
+    sinatra-contrib (2.2.0)
+      multi_json
+      mustermann (~> 1.0)
+      rack-protection (= 2.2.0)
+      sinatra (= 2.2.0)
+      tilt (~> 2.0)
+    sqlite3 (1.6.1-x86_64-linux)
+    tilt (2.1.0)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+    zeitwerk (2.6.7)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  faker (~> 3.1)
+  rake (~> 13.0)
+  sinatra
+  sinatra-activerecord (~> 2.0)
+  sinatra-contrib (~> 2.2)
+  sqlite3 (~> 1.6)
+
+BUNDLED WITH
+   2.2.30

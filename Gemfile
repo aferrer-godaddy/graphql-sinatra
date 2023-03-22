@@ -6,3 +6,5 @@ gem 'sinatra' # the main app
 gem 'sinatra-activerecord', '~> 2.0' # ORM to connect with the DB
 gem 'sinatra-contrib', '~> 2.2' # helps us with JSON response
 gem 'sqlite3', '~> 1.6' # the DB gem
+
+gem "puma", "~> 5.6"

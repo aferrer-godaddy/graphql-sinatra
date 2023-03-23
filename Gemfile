@@ -9,3 +9,5 @@ gem 'sqlite3', '~> 1.6' # the DB gem
 
 gem 'graphql', '~> 2.0'
 gem 'puma', '~> 5.6'
+
+gem "rack-contrib", "~> 2.3" # help Sinatra accept raw JSON

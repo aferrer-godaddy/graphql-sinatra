@@ -4,6 +4,7 @@ require 'sinatra'
 require 'sinatra/json'
 require 'sinatra/activerecord'
 require 'graphql'
+require 'rack/contrib' # help Sinatra accept raw JSON
 
 # Read the config/database.yml file
 # And connect to the database

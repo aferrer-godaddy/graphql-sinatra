@@ -3,6 +3,8 @@
 require_relative 'config'
 
 class MyAppController < Sinatra::Base
+  use Rack::JSONBodyParser
+
   get '/' do
     'Hello world!'
   end
@@ -12,5 +14,12 @@ class MyAppController < Sinatra::Base
 
     @restaurants = Restaurant.all
     json @restaurants
+  end
+
+  post '/graphql' do
+    result = MyAppSchema.execute(
+      params[:query]
+    )
+    json result
   end
 end
